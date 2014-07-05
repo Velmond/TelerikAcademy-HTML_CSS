@@ -1,0 +1,362 @@
+﻿body {
+    font-family: Arial, 'Segoe UI', sans-serif;
+    font-size: 12px;
+    border: 0;
+    color: #1E395B;
+}
+
+#window {
+    width: 421px;
+    height: 386px;
+    position: relative;
+    background-image: url(images/calculator.png), url(images/container-background.png);
+    background-repeat: no-repeat, repeat-x;
+    background-position: 9px 6px, 0 0;
+    -moz-box-shadow: #000 2px 2px 20px;
+    -webkit-box-shadow: #000 2px 2px 20px;
+    box-shadow: #000 2px 2px 20px;
+    background-color: #A0A0A0;
+    border: 1px solid #202020;
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    border-radius: 6px;
+}
+
+    #window > p {
+        font-size: 14px;
+        color: black;
+        margin: 7px 0 0 25px;
+        -webkit-text-shadow: 0 0 7px #fff;
+        text-shadow: 0 0 7px #fff;
+    }
+
+    #window > #controls {
+        position: absolute;
+        top: -1px;
+        right: 6px;
+    }
+
+        #window > #controls > button {
+            height: 20px;
+            border: 1px solid #4B4B4B;
+            border-top: 1px solid #202020;
+            padding: 0;
+            margin-left: -5px;
+        }
+
+        #window > #controls > #minimize-button {
+            width: 29px;
+            background-image: url(images/minimize-button.png);
+            -webkit-border-bottom-left-radius: 4px;
+            border-bottom-left-radius: 4px;
+        }
+
+            #window > #controls > #minimize-button:hover {
+                border: 1px solid #2D8695;
+                background-image: url(images/minimize-button-hover.png);
+                -moz-box-shadow: #2ED8E5 0 0 10px;
+                -webkit-box-shadow: #2ED8E5 0 0 10px;
+                box-shadow: #2ED8E5 0 0 10px;
+            }
+
+        #window > #controls > #maximize-button {
+            width: 28px;
+            background-image: url(images/maximize-button.png);
+        }
+
+        #window > #controls > #close-button {
+            width: 48px;
+            border: 1px solid #5A2E26;
+            background-image: url(images/close-button.png);
+            -webkit-border-bottom-right-radius: 4px;
+            border-bottom-right-radius: 4px;
+        }
+
+            #window > #controls > #close-button:hover {
+                border: 1px solid #8B592A;
+                background-image: url(images/close-button-hover.png);
+                -moz-box-shadow: red 0 0 10px;
+                -webkit-box-shadow: red 0 0 10px;
+                box-shadow: red 0 0 10px;
+            }
+
+    #window > #container {
+        width: 407px;
+        height: 350px;
+        margin: 6px;
+        background-image: url(images/main-background.png);
+        background-repeat: repeat-x;
+        background-position-y: 18px;
+        background-color: #D9E4F1;
+        border: 1px solid #525252;
+        -moz-border-radius: 3px;
+        -webkit-border-radius: 3px;
+        border-radius: 3px;
+    }
+
+        #window > #container > header {
+            height: 18px;
+            background-image: url(images/menu-bar.png);
+            background-repeat: repeat-x;
+            border-bottom: 1px solid #B6BCCC;
+        }
+
+        #window > #container > #main-menu > button {
+            font-size: 9px;
+            height: 16px;
+            width: 35px;
+            text-align: center;
+            background-color: rgba(0, 0, 0, 0);
+            border-style: hidden;
+            margin: 1px;
+            float: left;
+        }
+
+            #window > #container > #main-menu > button:hover {
+                border: 1px solid #B6BCCC;
+                width: 35px;
+                background-image: url(images/menu-bar-button-hover.png);
+                background-repeat: repeat-x;
+            }
+
+        #window > #container > #display-box > input[type="text"] {
+            height: 42px;
+            width: 379px;
+            font-family: Consolas, monospace;
+            font-size: 24px;
+            text-align: right;
+            color: #333;
+            background-image: url(images/result-display.png);
+            background-repeat: repeat-x;
+            border: 1px solid #8E9CAD;
+            margin: 11px 11px 0 11px;
+            padding: 6px 5px 1px 0;
+        }
+
+        #window > #container > #binary-representation {
+            width: 384px;
+            height: 57px;
+            border: 1px solid #8696AA;
+            background-color: #D9E4F1;
+            margin: 5px 11px 0 11px;
+        }
+
+            #window > #container > #binary-representation .inline {
+                overflow: hidden;
+                padding: 0;
+            }
+
+                #window > #container > #binary-representation .inline li {
+                    font-family: Consolas, monospace;
+                    font-size: 12px;
+                    width: 48px;
+                    list-style: none;
+                    float: left;
+                }
+
+                    #window > #container > #binary-representation .inline li:last-child {
+                        width: auto;
+                    }
+
+            #window > #container > #binary-representation .first-line {
+                margin: 2px 10px 0 7px;
+            }
+
+            #window > #container > #binary-representation .next-line {
+                margin: -1px 10px 0 7px;
+            }
+
+            #window > #container > #binary-representation .bit-number {
+                color: #666;
+            }
+
+                #window > #container > #binary-representation .bit-number li:first-child {
+                    width: 192px;
+                }
+
+                #window > #container > #binary-representation .bit-number li:nth-child(2) {
+                    width: 144px;
+                }
+
+                #window > #container > #binary-representation .bit-number li:last-child {
+                    width: 27px;
+                    text-align: right;
+                }
+
+        #window > #container > #options {
+            font-family: 'Segoe UI', Consolas, monospace;
+            font-size: 10px;
+            width: 84px;
+            float: left;
+        }
+
+            #window > #container > #options > #numeric-system,
+            #window > #container > #options > #data-type {
+                width: 71px;
+                height: 89px;
+                border: 1px solid #8696AA;
+                background-color: #D9E4F1;
+                margin: 5px 0 0 11px;
+            }
+
+            #window > #container > #options form > div.radio-button {
+                width: 60px;
+                margin-left: 1px;
+            }
+
+                #window > #container > #options form > div.radio-button:first-child {
+                    margin-top: 5px;
+                }
+
+                #window > #container > #options form > div.radio-button:not(:first-child) {
+                    margin-top: 1px;
+                }
+
+        #window > #container > #main-calculator > #functions {
+            width: 74px;
+            height: 187px;
+        }
+
+        #window > #container > #main-calculator > #hex-buttons {
+            width: 34px;
+            height: 187px;
+        }
+
+        #window > #container > #main-calculator > #basic {
+            width: 192px;
+            height: 155px;
+        }
+
+            #window > #container > #main-calculator > #basic > #row-of-five {
+                width: 200px;
+                height: 27px;
+            }
+
+            #window > #container > #main-calculator > #basic > #row-of-four {
+                width: 150px;
+                height: 27px;
+            }
+
+        #window > #container button {
+            width: 34px;
+            height: 27px;
+            font-family: 'Segoe UI';
+            font-size: 14px;
+            color: #1E395B;
+            padding: 0;
+            -moz-border-radius: 2px;
+            -webkit-border-radius: 2px;
+            border-radius: 2px;
+        }
+
+            #window > #container button.small-label {
+                font-size: 10px;
+            }
+
+            #window > #container button.active {
+                border: 1px solid #8E9CAD;
+                -moz-transition-duration: 1s;
+                -o-transition-duration: 1s;
+                -webkit-transition-duration: 1s;
+                transition-duration: 1s;
+            }
+
+                #window > #container button.active:hover {
+                    border: 1px solid #E2CB29;
+                    background-image: url(images/button-hover.png);
+                    background-repeat: repeat-x;
+                    -moz-transition-duration: .25s;
+                    -o-transition-duration: .25s;
+                    -webkit-transition-duration: .25s;
+                    transition-duration: .25s;
+                }
+
+            #window > #container button.light-button {
+                background-image: url(images/light-button.png);
+                background-repeat: repeat-x;
+            }
+
+            #window > #container button.dark-button {
+                background-image: url(images/dark-button.png);
+                background-repeat: repeat-x;
+            }
+
+            #window > #container button.flat-button {
+                background-image: url(images/flat-button.png);
+                background-repeat: repeat-x;
+            }
+
+                #window > #container button.flat-button:hover {
+                    background-image: url(images/flat-button-hover.png);
+                    background-repeat: repeat-x;
+                }
+
+            #window > #container button.inactive {
+                border: 1px solid #B4C2D1;
+                background-color: #D9E4F1;
+            }
+
+            #window > #container button#equal-button {
+                height: 59px;
+                font-size: 26px;
+                padding-bottom: 5px;
+                float: right;
+                margin-top: -59px;
+                background-image: url(images/equal-button.png);
+                background-repeat: repeat-x;
+            }
+
+                #window > #container button#equal-button:hover {
+                    background-image: url(images/equal-hover.png);
+                    background-repeat: repeat-x;
+                }
+
+            #window > #container button#zero-button {
+                width: 73px;
+            }
+
+.top-offset {
+    margin-top: 5px;
+}
+
+.left-offset {
+    margin-left: 5px;
+}
+
+.hex-col-offset {
+    margin-left: 2px;
+    margin-right: 2px;
+}
+
+.left-offset-button {
+    margin-left: 2px;
+}
+
+div.float-left {
+    float: left;
+}
+
+.pseudo-button {
+    width: 32px;
+    height: 25px;
+    border: 1px solid #8E9CAD;
+}
+
+.none-selectable {
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+.border-radius-2 {
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+}
+
+.white-border-shadow {
+    -moz-box-shadow: inset 0 0 0 1px #fff;
+    -webkit-box-shadow: inset 0 0 0 1px #fff;
+    box-shadow: inset 0 0 0 1px #fff;
+}

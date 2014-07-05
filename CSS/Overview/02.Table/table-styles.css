@@ -1,0 +1,79 @@
+﻿body {
+    font-family: Verdana, Arial;
+    vertical-align: central;
+}
+
+table {
+    /* Keep the borders separate so each cell can have a different colored top, bottom, left and right border */
+    border-collapse: separate;
+    /* Stick the cells next to one another */
+    border-spacing: 0px;
+    /* Hide the outermost border (the "global" border for the table) */
+    border-style: hidden;
+}
+
+th {
+    border-bottom: 1px solid #267e00;
+    border-left: 1px solid #267e00;
+    border-top: 1px solid #6fc728;
+    border-right: 1px solid #6fc728;
+    font-weight: normal;
+    /* You can't really tell there is a gradient unless you change the two colors for it because the two greens used are
+       very close but those are the ones I got from the picture in the presentation */
+    background: -webkit-linear-gradient(#5ec306, #4fb306); /* For Safari */
+    background: -o-linear-gradient(#5ec306, #4fb306); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#5ec306, #4fb306); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#5ec306, #4fb306); /* Standard syntax */
+    color: #fff;
+    padding: 5px;
+}
+
+td {
+    font-family: Arial, Verdana;
+    padding: 5px;
+    /* Hide some of the borders */
+    border-top-style: hidden;
+    border-bottom-style: hidden;
+    border-right-style: hidden;
+    border-left: 1px solid #bdbba0;
+}
+
+    td:last-child {
+        /* Put a right border for the last cell on each row */
+        border-right: 1px solid #bdbba0;
+    }
+
+tr {
+    text-align: left;
+}
+
+    tr:nth-child(2n+1) {
+        background-color: #fff;
+    }
+
+    tr:nth-child(2n) {
+        background-color: #ececd8;
+    }
+
+    tr:last-child td {
+        /* Put a bottom border for each cell on the last row */
+        border-bottom: 1px solid #bdbba0;
+    }
+
+img {
+    /* Images need resizeing */
+    resize: both;
+    width: 25px;
+}
+
+.colWidth150 {
+    width: 150px;
+}
+
+.colWidth125 {
+    width: 125px;
+}
+
+.colWidth100 {
+    width: 100px;
+}

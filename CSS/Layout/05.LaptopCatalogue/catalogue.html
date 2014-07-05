@@ -1,0 +1,128 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <link rel="stylesheet" type="text/css" href="CatalogueStyle.css" />
+    <script type="text/javascript" src="SliderValue.js"></script>
+    <title>Filter</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>
+                    <a href="#">Apple</a>
+                </li>
+                <li>
+                    <a href="#">Toshiba</a>
+                </li>
+                <li>
+                    <a href="#">Lenovo</a>
+                </li>
+                <li>
+                    <a href="#">Dell</a>
+                </li>
+                <li>
+                    <a href="#">Asus</a>
+                </li>
+                <li>
+                    <a href="#">Acer</a>
+                </li>
+                <li>
+                    <a href="#">HP</a>
+                </li>
+            </ul>
+        </nav>
+        <hr />
+    </header>
+    <article id="main-content">
+        <section id="list" class="bordered">
+            <fieldset class="bordered">
+                <legend>Apple MacBook Air</legend>
+                <img src="images/macbookair.png" />
+                <ul>
+                    <li>64 GB SSD</li>
+                    <li>2 GB DDR</li>
+                    <li>1300 USD</li>
+                    <li>Intel Core i5</li>
+                </ul>
+            </fieldset>
+            <fieldset class="bordered">
+                <legend>Apple MacBook Air</legend>
+                <img src="images/macbookair.png" />
+                <ul>
+                    <li>64 GB SSD</li>
+                    <li>2 GB DDR</li>
+                    <li>1300 USD</li>
+                    <li>Intel Core i5</li>
+                </ul>
+            </fieldset>
+            <fieldset class="bordered">
+                <legend>Apple MacBook Air</legend>
+                <img src="images/macbookair.png" />
+                <ul>
+                    <li>64 GB SSD</li>
+                    <li>2 GB DDR</li>
+                    <li>1300 USD</li>
+                    <li>Intel Core i5</li>
+                </ul>
+            </fieldset>
+            <fieldset class="bordered">
+                <legend>Apple MacBook Air</legend>
+                <img src="images/macbookair.png" />
+                <ul>
+                    <li>64 GB SSD</li>
+                    <li>2 GB DDR</li>
+                    <li>1300 USD</li>
+                    <li>Intel Core i5</li>
+                </ul>
+            </fieldset>
+            <fieldset class="bordered">
+                <legend>Apple MacBook Air</legend>
+                <img src="images/macbookair.png" />
+                <ul>
+                    <li>64 GB SSD</li>
+                    <li>2 GB DDR</li>
+                    <li>1300 USD</li>
+                    <li>Intel Core i5</li>
+                </ul>
+            </fieldset>
+            <fieldset class="bordered">
+                <legend>Apple MacBook Air</legend>
+                <img src="images/macbookair.png" />
+                <ul>
+                    <li>64 GB SSD</li>
+                    <li>2 GB DDR</li>
+                    <li>1300 USD</li>
+                    <li>Intel Core i5</li>
+                </ul>
+            </fieldset>
+        </section>
+        <section id="filter">
+            <p>
+                Min price:
+                <span id="minPrice"></span>
+                USD
+            </p>
+            <input type="range" id="minPriceSlider" min="0" max="1000" step="50" value="500" onchange="printValue('minPriceSlider','minPrice')" />
+            <p>
+                Max price:
+                <span id="maxPrice"></span>
+                USD
+            </p>
+            <input type="range" id="maxPriceSlider" min="500" max="2500" step="100" value="1500" onchange="printValue('maxPriceSlider','maxPrice')" />
+            <p>
+                Min RAM:
+                <span id="minRAM"></span>
+                GB
+            </p>
+            <input type="range" id="minRAMSlider" min="0" max="8" step="2" value="4" onchange="printValue('minRAMSlider','minRAM')" />
+            <p>
+                Max RAM:
+                <span id="maxRAM"></span>
+                GB
+            </p>
+            <input type="range" id="maxRAMSlider" min="4" max="28" step="4" value="16" onchange="printValue('maxRAMSlider','maxRAM')" />
+        </section>
+    </article>
+</body>
+</html>

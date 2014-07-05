@@ -1,0 +1,35 @@
+﻿body {
+}
+
+a {
+    font-family: Verdana;
+    color: #00abef;
+    text-decoration: underline;
+}
+
+hr {
+    color: lightgray;
+    background-color: lightgray;
+    height:2px;
+}
+
+tbody {
+    font-family: Georgia;
+}
+
+thead td {
+    text-align:center;
+}
+
+tbody td {
+    padding: 2px 2px 2px 2px;
+}
+
+input[type="range"] {
+    width: 150px;
+}
+
+#outerTable {
+    border-collapse: collapse;
+    border: 2px solid gray;
+}

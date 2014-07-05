@@ -1,0 +1,36 @@
+﻿body {
+    font-family: Calibri;
+    color:midnightblue;
+    background-color: powderblue;
+    font-size:1.5em;
+}
+
+h1 {
+    margin-bottom: 0;
+    margin-top: 0;
+    font-size:1.5em;
+}
+
+header {
+    margin-bottom:2em;
+}
+
+p {
+    font-size:1.1em;
+}
+
+dl {
+    margin-left:1em;
+}
+
+article {
+    margin-left:1em;
+}
+
+.Emphasized {
+    font-style:italic;
+}
+
+.SpreadOut {
+    margin-right:5em;
+}

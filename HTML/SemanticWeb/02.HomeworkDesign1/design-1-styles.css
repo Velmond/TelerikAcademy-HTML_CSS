@@ -1,0 +1,23 @@
+﻿body {
+}
+
+img {
+    width: 100px;
+    resize: both;
+    float: left;
+}
+
+table {
+    border-collapse: collapse;
+    border-color: black;
+}
+
+td, th {
+    padding: 2px;
+}
+
+#page-title {
+    width: 400px;
+    height: 70px;
+    padding: 30px 0 0 125px;
+}

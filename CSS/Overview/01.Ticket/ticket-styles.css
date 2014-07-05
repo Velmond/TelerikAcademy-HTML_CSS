@@ -1,0 +1,60 @@
+﻿body {
+    background-color: #595959;
+    font-family: Arial, Verdana;
+    font-size: 14px;
+    text-align: left;
+    vertical-align: top;
+    color: #ffffff;
+}
+
+tr {
+    height: 30px;
+}
+
+td.doubleHeight {
+    text-align: left;
+    vertical-align: top;
+}
+
+th {
+    font-weight: normal;
+    font-size: 18px;
+}
+
+img.dot {
+    /* The image needs resizeing as it is too big */
+    resize: both;
+    width: 12px;
+}
+
+div#status, div#support {
+    font-weight: bold;
+}
+
+#tableKey {
+    width: 150px;
+}
+
+#tableValue {
+    width: 200px;
+}
+
+.key {
+    font-style: italic;
+}
+
+.yellow {
+    color: #fff3b1;
+}
+
+.red {
+    color: #ff0000;
+}
+
+.gray {
+    color: #b4b4b4;
+}
+
+.orange {
+    color: #e86d17;
+}

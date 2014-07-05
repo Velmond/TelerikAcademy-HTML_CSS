@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01.PinkPage-SASSRedo", "01.PinkPage-SASSRedo\01.PinkPage-SASSRedo.csproj", "{BE0B9C21-8CAA-4A10-BD10-7EE7E085F8CE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02.Gallery-SASS", "02.Gallery-SASS\02.Gallery-SASS.csproj", "{CE31AE40-14AC-4CF8-97A5-451C70CB57EE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BE0B9C21-8CAA-4A10-BD10-7EE7E085F8CE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BE0B9C21-8CAA-4A10-BD10-7EE7E085F8CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BE0B9C21-8CAA-4A10-BD10-7EE7E085F8CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BE0B9C21-8CAA-4A10-BD10-7EE7E085F8CE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CE31AE40-14AC-4CF8-97A5-451C70CB57EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CE31AE40-14AC-4CF8-97A5-451C70CB57EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CE31AE40-14AC-4CF8-97A5-451C70CB57EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CE31AE40-14AC-4CF8-97A5-451C70CB57EE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

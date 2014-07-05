@@ -1,0 +1,23 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Basic form</title>
+</head>
+<body>
+    <form action="some_action" method="post">
+        <label for="name">Member name:</label>
+        <input type="text" id="name" title="Name" required="required" />
+        <strong>*req</strong>
+        <br />
+        <label for="email">Email:</label>
+        <input type="text" id="email" title="Email" required="required" pattern="[-0-9a-zA-Z.+_]+@[-0-9a-zA-Z.+_]+\.[a-zA-Z]{2,4}" />
+        <strong>*req</strong>
+        <br />
+        <label for="school">School:</label>
+        <input type="text" id="school" title="School" required="required" />
+        <strong>*req</strong>
+        <br />
+        <input type="submit" value="Submit" />
+    </form>
+</body>
+</html>

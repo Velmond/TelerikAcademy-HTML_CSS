@@ -1,0 +1,200 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <link rel="stylesheet" type="text/css" href="CalculatorStyles.css" />
+    <script src="modernizr.js" type="text/javascript"></script>
+    <title>Calculator</title>
+</head>
+<body>
+    <!-- I had a lot of trouble making the gradients untill a finaly gave up and decided to do it with background-image. 
+         It may load a little bit slower but for the sake of this homework it does the job perfectly.
+         Couldn't find the exact fonts used for the actual Calculator so after much trial and error I gave up. I think 
+         it should be OK on most browsers. Looks best on Chrome in my opinion, IE10's font sizes seem to be a little bit 
+         off and FireFox inexplicably lowers the 'minimize', 'mazimize' and 'close' buttons about a pixel lower than it
+         should be at and I can't find a way to fix it without ruining it on the other browsers. -->
+
+    <section id="window" class="none-selectable">
+        <p>Calculator</p>
+        <div id="controls">
+            <button id="minimize-button" class=" "></button>
+            <button id="maximize-button" class=" "></button>
+            <button id="close-button" class=" "></button>
+        </div>
+
+        <section id="container" class="white-border-shadow">
+            <header id="main-menu">
+                <button class="menu-button border-radius-2">View</button>
+                <button class="menu-button border-radius-2">Edit</button>
+                <button class="menu-button border-radius-2">Help</button>
+            </header>
+
+            <form id="display-box">
+                <input type="text" class="white-border-shadow border-radius-2" value="8854455" />
+            </form>
+
+            <div id="binary-representation" class="white-border-shadow border-radius-2">
+                <ul class="inline first-line">
+                    <li>0000</li>
+                    <li>0000</li>
+                    <li>0000</li>
+                    <li>0000</li>
+                    <li>0000</li>
+                    <li>0000</li>
+                    <li>0000</li>
+                    <li>0000</li>
+                </ul>
+                <ul class="inline next-line bit-number">
+                    <li>63</li>
+                    <li>47</li>
+                    <li>32</li>
+                </ul>
+                <ul class="inline next-line">
+                    <li>0000</li>
+                    <li>0000</li>
+                    <li>1000</li>
+                    <li>0111</li>
+                    <li>0001</li>
+                    <li>1011</li>
+                    <li>1011</li>
+                    <li>0111</li>
+                </ul>
+                <ul class="inline next-line bit-number">
+                    <li>31</li>
+                    <li>15</li>
+                    <li>0</li>
+                </ul>
+            </div>
+
+            <div id="options">
+                <div id="numeric-system" class="border-radius-2">
+                    <form>
+                        <div class="radio-button">
+                            <label>
+                                <input type="radio" name="numericSystem" value="Hex" />
+                                Hex
+                            </label>
+                        </div>
+                        <div class="radio-button">
+                            <label>
+                                <input type="radio" name="numericSystem" value="Dec" checked="checked" />
+                                Dec
+                            </label>
+                        </div>
+                        <div class="radio-button">
+                            <label>
+                                <input type="radio" name="numericSystem" value="Oct" />
+                                Oct
+                            </label>
+                        </div>
+                        <div class="radio-button">
+                            <label>
+                                <input type="radio" name="numericSystem" value="Bin" />
+                                Bin
+                            </label>
+                        </div>
+                    </form>
+                </div>
+                <div id="data-type" class="border-radius-2">
+                    <form>
+                        <div class="radio-button">
+                            <label>
+                                <input type="radio" name="dataType" value="Qword" checked="checked" />
+                                Qword
+                            </label>
+                        </div>
+                        <div class="radio-button">
+                            <label>
+                                <input type="radio" name="dataType" value="Dword" />
+                                Dword
+                            </label>
+                        </div>
+                        <div class="radio-button">
+                            <label>
+                                <input type="radio" name="dataType" value="Word" />
+                                Word
+                            </label>
+                        </div>
+                        <div class="radio-button">
+                            <label>
+                                <input type="radio" name="dataType" value="Byte" />
+                                Byte
+                            </label>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <div id="main-calculator">
+                <div id="functions" class="float-left top-offset left-offset">
+                    <div class="pseudo-button float-left border-radius-2"></div>
+                    <button class="active white-border-shadow dark-button left-offset small-label" id="mod-button">Mod</button>
+                    <button class="active white-border-shadow dark-button top-offset small-label">(</button>
+                    <button class="active white-border-shadow dark-button top-offset left-offset-button small-label">)</button>
+                    <button class="active white-border-shadow dark-button top-offset small-label">RoL</button>
+                    <button class="active white-border-shadow dark-button top-offset left-offset-button small-label">RoR</button>
+                    <button class="active white-border-shadow dark-button top-offset small-label">Or</button>
+                    <button class="active white-border-shadow dark-button top-offset left-offset-button small-label">Xor</button>
+                    <button class="active white-border-shadow dark-button top-offset small-label">Lsh</button>
+                    <button class="active white-border-shadow dark-button top-offset left-offset-button small-label">Rsh</button>
+                    <button class="active white-border-shadow dark-button top-offset small-label">Not</button>
+                    <button class="active white-border-shadow dark-button top-offset left-offset-button small-label">And</button>
+                </div>
+
+                <div id="hex-buttons" class="float-left top-offset hex-col-offset">
+                    <button class="inactive left-offset-button">A</button>
+                    <button class="inactive left-offset-button top-offset">B</button>
+                    <button class="inactive left-offset-button top-offset">C</button>
+                    <button class="inactive left-offset-button top-offset">D</button>
+                    <button class="inactive left-offset-button top-offset">E</button>
+                    <button class="inactive left-offset-button top-offset">F</button>
+                </div>
+
+                <div id="basic" class="float-left top-offset left-offset">
+                    <div id="row-of-five">
+                        <button class="active white-border-shadow flat-button small-label">MC</button>
+                        <button class="active white-border-shadow flat-button left-offset-button small-label">MR</button>
+                        <button class="active white-border-shadow flat-button left-offset-button small-label">MS</button>
+                        <button class="active white-border-shadow flat-button left-offset-button small-label">M+</button>
+                        <button class="active white-border-shadow flat-button left-offset-button small-label">M-</button>
+                    </div>
+                    <div class="row-of-five top-offset">
+                        <button class="active white-border-shadow dark-button">
+                            <img src="images/del-button.png" />
+                        </button>
+                        <button class="active white-border-shadow dark-button left-offset-button">CE</button>
+                        <button class="active white-border-shadow dark-button left-offset-button">C</button>
+                        <button class="active white-border-shadow dark-button left-offset-button">&plusmn;</button>
+                        <button class="inactive left-offset-button">&radic;</button>
+                    </div>
+                    <div class="row-of-five top-offset">
+                        <button class="active white-border-shadow light-button">7</button>
+                        <button class="active white-border-shadow light-button left-offset-button">8</button>
+                        <button class="active white-border-shadow light-button left-offset-button">9</button>
+                        <button class="active white-border-shadow dark-button left-offset-button">/</button>
+                        <button class="inactive left-offset-button">%</button>
+                    </div>
+                    <div class="row-of-five top-offset">
+                        <button class="active white-border-shadow light-button">4</button>
+                        <button class="active white-border-shadow light-button left-offset-button">5</button>
+                        <button class="active white-border-shadow light-button left-offset-button">6</button>
+                        <button class="active white-border-shadow dark-button left-offset-button">*</button>
+                        <button class="inactive left-offset-button">1/x</button>
+                    </div>
+                    <div class="row-of-four top-offset">
+                        <button class="active white-border-shadow light-button">1</button>
+                        <button class="active white-border-shadow light-button left-offset-button">2</button>
+                        <button class="active white-border-shadow light-button left-offset-button">3</button>
+                        <button class="active white-border-shadow dark-button left-offset-button">-</button>
+                    </div>
+                    <div class="row-of-four top-offset">
+                        <button id="zero-button" class="active white-border-shadow light-button">0</button>
+                        <button class="inactive left-offset-button">.</button>
+                        <button class="active white-border-shadow dark-button left-offset-button">+</button>
+                    </div>
+                    <button id="equal-button" class="active white-border-shadow">=</button>
+                </div>
+            </div>
+        </section>
+    </section>
+</body>
+</html>

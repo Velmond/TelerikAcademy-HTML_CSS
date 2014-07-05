@@ -1,0 +1,172 @@
+body {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: 14px normal Arial;
+  background: url(images/background.png) repeat-x;
+  background-color: #9215F2;
+  color: white; }
+  body header, body section, body footer, body article, body h1, body h2, body h3, body h4, body h5, body h6, body input, body button, body label, body p, body fieldset, body nav, body ul, body li, body a, body span, body strong, body em {
+    margin: 0;
+    padding: 0;
+    border: 0; }
+  body div, body h1, body h3, body h4, body h5, body h6, body header, body footer, body body, body section, body nav, body article, body aside {
+    display: block; }
+  body a {
+    color: #D0A3F7;
+    text-decoration: none; }
+    body a:hover {
+      text-decoration: underline; }
+  body header {
+    padding: 25px 5px 15px 15px; }
+    body header div#header-container div#logo-container {
+      position: relative;
+      float: left; }
+    body header div#header-container div#reg-form-container {
+      position: relative;
+      float: right;
+      right: 5%;
+      top: 50%; }
+      body header div#header-container div#reg-form-container form div {
+        text-align: right; }
+        body header div#header-container div#reg-form-container form div label {
+          width: 50px;
+          margin: 5px; }
+        body header div#header-container div#reg-form-container form div input[type="text"], body header div#header-container div#reg-form-container form div input[type="password"] {
+          border-width: 1px;
+          border-style: solid;
+          border-color: #6d3e90;
+          border-radius: 10px;
+          width: 130px;
+          background-color: #B35EF3;
+          padding: 2px 5px;
+          margin: 5px; }
+      body header div#header-container div#reg-form-container form button {
+        border-width: 1px;
+        border-style: outset;
+        border-color: #bc94da;
+        border-radius: 10px;
+        color: white;
+        background-color: #B35EF3;
+        margin-left: auto;
+        margin-right: auto;
+        font-weight: bold;
+        padding: 5px 8px; }
+        body header div#header-container div#reg-form-container form button:hover {
+          border-width: 1px;
+          border-style: inset;
+          border-color: #bc94da;
+          border-radius: 10px;
+          background-color: #8949b9; }
+    body header nav {
+      border-width: 1px;
+      border-style: solid;
+      border-color: black;
+      border-radius: 14px;
+      display: inline-block;
+      width: 75%;
+      margin: 20px 20px 20px 20px;
+      padding: 12px; }
+      body header nav ul.nav-list {
+        list-style-type: none; }
+        body header nav ul.nav-list li {
+          float: left;
+          margin: 0; }
+          body header nav ul.nav-list li.selected {
+            font-weight: bold; }
+          body header nav ul.nav-list li a {
+            font: 1.4em normal Arial;
+            color: white;
+            padding: 0 10px 0 10px; }
+          body header nav ul.nav-list li:hover > a {
+            text-decoration: underline;
+            color: #a8a8a8; }
+          body header nav ul.nav-list li:hover > a + ul {
+            display: block; }
+          body header nav ul.nav-list li ul.sub-nav-list {
+            position: absolute;
+            display: none;
+            background-color: rgba(179, 94, 243, 0.9);
+            border-radius: 5px; }
+            body header nav ul.nav-list li ul.sub-nav-list li {
+              float: none;
+              margin: 0 15px;
+              padding: 10px 0;
+              border-bottom: 1px solid black; }
+              body header nav ul.nav-list li ul.sub-nav-list li:last-of-type {
+                border-bottom: none; }
+              body header nav ul.nav-list li ul.sub-nav-list li > a {
+                font-size: 1.2em;
+                color: #fff; }
+              body header nav ul.nav-list li ul.sub-nav-list li:hover > a {
+                text-decoration: underline;
+                color: #a8a8a8; }
+  body section {
+    width: 75%;
+    float: left; }
+    body section article {
+      border-width: 1px;
+      border-style: solid;
+      border-color: black;
+      border-radius: 14px;
+      margin: 20px;
+      padding: 20px; }
+      body section article header {
+        background: none;
+        padding: 5px; }
+        body section article header h1 {
+          font-size: 1.4em;
+          padding: 0; }
+      body section article footer {
+        padding: 5px; }
+        body section article footer p {
+          font-size: 16px;
+          text-align: right;
+          font-weight: normal; }
+          body section article footer p time {
+            font-family: Consolas, 'Lucida Console', 'DejaVu Sans Mono', monospace; }
+  body aside {
+    float: left;
+    width: 20%;
+    margin: 20px; }
+    body aside > ul {
+      list-style-type: none; }
+      body aside > ul > li {
+        border-width: 1px;
+        border-style: solid;
+        border-color: black;
+        border-radius: 5px;
+        margin: 15px 0;
+        padding: 15px; }
+        body aside > ul > li h2 {
+          font-size: 1.1em;
+          font-weight: bold; }
+        body aside > ul > li p {
+          margin: 10px 5px;
+          font-size: 14px; }
+          body aside > ul > li p a {
+            color: #aaaaaa;
+            text-decoration: none; }
+          body aside > ul > li p strong {
+            color: #cccccc;
+            font-weight: bold;
+            font-style: normal; }
+          body aside > ul > li p em {
+            color: #cccccc;
+            font-weight: normal;
+            font-style: italic; }
+        body aside > ul > li ul {
+          list-style-type: none;
+          margin: 10px 0; }
+          body aside > ul > li ul li {
+            margin: 5px 10px 0 0;
+            background: url(images/li-dot.png) no-repeat 0 50%;
+            padding-left: 25px; }
+  body footer {
+    clear: both;
+    padding: 15px 25px 0 0;
+    text-align: center; }
+    body footer p {
+      font-size: 1.2em;
+      font-weight: bold; }
+

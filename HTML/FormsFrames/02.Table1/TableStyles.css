@@ -1,0 +1,24 @@
+﻿body {
+}
+
+table {
+    border: thin;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+thead, tbody {
+    text-align: center;
+}
+
+.thin {
+    width: 75px;
+}
+
+.wide {
+    width: 125px;
+}
+
+.lastCell {
+    font-weight: bold;
+}

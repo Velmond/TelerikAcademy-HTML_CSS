@@ -1,0 +1,81 @@
+﻿body { 
+}
+
+table {
+    border: thin;
+    border-color: gray;
+    border-collapse: collapse;
+}
+
+tfoot {
+    text-align: center;
+    background-color: #d1ede1;
+}
+
+td {
+    padding: 5px;
+}
+
+input[type="text"] {
+    width: 295px;
+}
+
+textarea {
+    width: 290px;
+}
+
+.leftCell {
+    text-align: right;
+    border-bottom: none;
+    border-right: none;
+}
+
+.middleCell {
+    border-bottom: none;
+    border-right: none;
+}
+
+.rightCell {
+    border-bottom: none;
+}
+
+#titleColumn {
+    width: 150px;
+}
+
+#contentColumn {
+    width: 200px;
+}
+
+#additionalTitleColumn {
+    width: 50px;
+}
+
+#additionalContentColumn {
+    width: 50px;
+}
+
+#address, #comments {
+    height: 50px;
+    border: 1px solid lightgray;
+}
+
+#city {
+    width: 175px;
+}
+
+#state {
+    width: 45px;
+}
+
+#countryCode {
+    width: 30px;
+}
+
+#areaCode {
+    width: 45px;
+}
+
+#number {
+    width: 105px;
+}

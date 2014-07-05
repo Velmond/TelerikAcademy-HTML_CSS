@@ -1,0 +1,193 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <!-- Works with Chrome. With IE the images for the 2nd row of the thead and the tfoot don't always load...
+         I can't figure out why it works sometimes and sometimes it doesn't (on IE). -->
+    <link rel="stylesheet" type="text/css" href="TableStyles.css" />
+    <title>Grid</title>
+</head>
+<body>
+    <form name="grid" action="#" method="get">
+        <table border="1">
+            <colgroup>
+                <col />
+                <col />
+                <col />
+                <col />
+                <col />
+                <col />
+            </colgroup>
+            <thead>
+                <tr class="theadRow1">
+                    <td class="leftmostCell" colspan="6">Drag a column header and drop it here to group by that column</td>
+                </tr>
+                <tr class="theadRow2">
+                    <td class="regularCell">Product ID</td>
+                    <td class="regularCell">Product name</td>
+                    <td class="regularCell">Unit price</td>
+                    <td class="regularCell">Quantity per unit</td>
+                    <td class="regularCell">Units in stock</td>
+                    <td class="leftmostCell">Discontinued</td>
+                </tr>
+                <tr class="theadRow3">
+                    <td class="regularCell">
+                        <input type="text" name="productID" id="productID" />
+                    </td>
+                    <td class="regularCell">
+                        <input type="text" name="productName" id="productName" />
+                    </td>
+                    <td class="regularCell">
+                        <input type="text" name="unitPrice" id="unitPrice" />
+                        <input type="image" src="images/filter.png" alt="filter" />
+                    </td>
+                    <td class="regularCell">
+                        <input type="text" name="QPU" id="QPU" />
+                    </td>
+                    <td class="regularCell">
+                        <input type="text" name="inStock" id="inStock" />
+                        <input type="image" src="images/filter.png" alt="filter" />
+                    </td>
+                    <td class="leftmostCell">
+                        <input type="checkbox" name="discontinued" id="discontinued" />
+                        <input type="image" src="images/filter.png" alt="filter" />
+                    </td>
+                </tr>
+            </thead>
+            <tfoot>
+                <tr>
+                    <td class="footerLeftCell" colspan="2">
+                        <input type="image" src="images/begin.png" alt="first" />
+                        <input type="image" src="images/prev.png" alt="previous" />
+                        <a href="#" class="active">1</a>
+                        <a href="#">2</a>
+                        <a href="#">3</a>
+                        <a href="#">4</a>
+                        <a href="#">5</a>
+                        <a href="#">6</a>
+                        <a href="#">7</a>
+                        <a href="#">8</a>
+                        <a href="#">9</a>
+                        <a href="#">10</a>
+                        ...
+                        <input type="image" src="images/next.png" alt="next" />
+                        <input type="image" src="images/end.png" alt="last" />
+                    </td>
+                    <td class="footerMiddleCell" colspan="2">Page size: 
+                        <select name="rowsPerPage">
+                            <option value="10" selected="selected">10</option>
+                            <option value="20">20</option>
+                            <option value="30">30</option>
+                            <option value="40">40</option>
+                            <option value="50">50</option>
+                        </select>
+                    </td>
+                    <td class="footerRightCell" colspan="2">335104 items in 33511 pages
+                    </td>
+                </tr>
+            </tfoot>
+            <tbody>
+                <tr>
+                    <td class="regularCell">1</td>
+                    <td class="regularCell">Chai</td>
+                    <td class="regularCell">$18.00</td>
+                    <td class="regularCell">10 boxes x 20 bags</td>
+                    <td class="regularCell">39</td>
+                    <td class="leftmostCell">
+                        <input type="checkbox" name="discontinued" disabled="disabled" />
+                    </td>
+                </tr>
+                <tr>
+                    <td class="regularCell">2</td>
+                    <td class="regularCell">Chang</td>
+                    <td class="regularCell">$19.00</td>
+                    <td class="regularCell">24 - 12 oz bottles</td>
+                    <td class="regularCell">17</td>
+                    <td class="leftmostCell">
+                        <input type="checkbox" name="discontinued" disabled="disabled" />
+                    </td>
+                </tr>
+                <tr>
+                    <td class="regularCell">3</td>
+                    <td class="regularCell">Aniseed Syrup</td>
+                    <td class="regularCell">$10.00</td>
+                    <td class="regularCell">12 - 550 ml bottles</td>
+                    <td class="regularCell">13</td>
+                    <td class="leftmostCell">
+                        <input type="checkbox" name="discontinued" disabled="disabled" />
+                    </td>
+                </tr>
+                <tr>
+                    <td class="regularCell">4</td>
+                    <td class="regularCell">Chef Anton's Cajun Seasoning</td>
+                    <td class="regularCell">$22.00</td>
+                    <td class="regularCell">48 - 6 oz jars</td>
+                    <td class="regularCell">53</td>
+                    <td class="leftmostCell">
+                        <input type="checkbox" name="discontinued" disabled="disabled" />
+                    </td>
+                </tr>
+                <tr>
+                    <td class="regularCell">5</td>
+                    <td class="regularCell">Chef Anton's Gumbo Mix</td>
+                    <td class="regularCell">$21.35</td>
+                    <td class="regularCell">36 boxes</td>
+                    <td class="regularCell">0</td>
+                    <td class="leftmostCell">
+                        <input type="checkbox" name="discontinued" disabled="disabled" checked="checked" />
+                    </td>
+                </tr>
+                <tr>
+                    <td class="regularCell">6</td>
+                    <td class="regularCell">Grandma's Boysenberry Spread</td>
+                    <td class="regularCell">$25.00</td>
+                    <td class="regularCell">12 - 8 oz jars</td>
+                    <td class="regularCell">120</td>
+                    <td class="leftmostCell">
+                        <input type="checkbox" name="discontinued" disabled="disabled" />
+                    </td>
+                </tr>
+                <tr>
+                    <td class="regularCell">7</td>
+                    <td class="regularCell">Uncle Bob's Organic Dried Pears</td>
+                    <td class="regularCell">$30.00</td>
+                    <td class="regularCell">12 - 1 lb pkgs.</td>
+                    <td class="regularCell">15</td>
+                    <td class="leftmostCell">
+                        <input type="checkbox" name="discontinued" disabled="disabled" />
+                    </td>
+                </tr>
+                <tr>
+                    <td class="regularCell">8</td>
+                    <td class="regularCell">Northwoods Cranberry Sauce</td>
+                    <td class="regularCell">$40.00</td>
+                    <td class="regularCell">12 - 12 oz jars</td>
+                    <td class="regularCell">6</td>
+                    <td class="leftmostCell">
+                        <input type="checkbox" name="discontinued" disabled="disabled" />
+                    </td>
+                </tr>
+                <tr>
+                    <td class="regularCell">9</td>
+                    <td class="regularCell">Mishi Kobe Niku</td>
+                    <td class="regularCell">$97.00</td>
+                    <td class="regularCell">18 - 500 g pkgs.</td>
+                    <td class="regularCell">29</td>
+                    <td class="leftmostCell">
+                        <input type="checkbox" name="discontinued" disabled="disabled" checked="checked" />
+                    </td>
+                </tr>
+                <tr>
+                    <td class="regularCell">10</td>
+                    <td class="regularCell">Ikura</td>
+                    <td class="regularCell">$31.00</td>
+                    <td class="regularCell">12 - 200 ml jars</td>
+                    <td class="regularCell">31</td>
+                    <td class="leftmostCell">
+                        <input type="checkbox" name="discontinued" disabled="disabled" />
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </form>
+</body>
+</html>

@@ -1,0 +1,23 @@
+﻿body {
+}
+
+.circle-list {
+    list-style-type: circle;
+}
+
+.disc-list {
+    list-style-type: disc;
+}
+
+p {
+    padding-top:0px;
+    padding-bottom:0px;
+}
+
+h1 {
+    font-size:1.30em;
+}
+
+h2 {
+    font-size:1.5em;
+}

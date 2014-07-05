@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01.Ticket", "01.Ticket\01.Ticket.csproj", "{9E82B4F3-896E-40C7-89C7-D47030B4B3BE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02.Table", "02.Table\02.Table.csproj", "{35B85D6D-65B3-457D-960E-E7C165868C0F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03.UglyPage", "03.UglyPage\03.UglyPage.csproj", "{3CD8B280-AD6D-4CE8-AAB8-E1C3BBED4A60}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9E82B4F3-896E-40C7-89C7-D47030B4B3BE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9E82B4F3-896E-40C7-89C7-D47030B4B3BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9E82B4F3-896E-40C7-89C7-D47030B4B3BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9E82B4F3-896E-40C7-89C7-D47030B4B3BE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{35B85D6D-65B3-457D-960E-E7C165868C0F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{35B85D6D-65B3-457D-960E-E7C165868C0F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{35B85D6D-65B3-457D-960E-E7C165868C0F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{35B85D6D-65B3-457D-960E-E7C165868C0F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3CD8B280-AD6D-4CE8-AAB8-E1C3BBED4A60}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3CD8B280-AD6D-4CE8-AAB8-E1C3BBED4A60}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3CD8B280-AD6D-4CE8-AAB8-E1C3BBED4A60}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3CD8B280-AD6D-4CE8-AAB8-E1C3BBED4A60}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

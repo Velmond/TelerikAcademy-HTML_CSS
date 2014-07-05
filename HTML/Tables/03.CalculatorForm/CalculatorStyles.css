@@ -1,0 +1,39 @@
+﻿body {
+}
+
+table {
+    border-spacing: 0;
+}
+
+td {
+    height: 50px;
+    width: 50px;
+    padding: 0px;
+    margin: 0px;
+}
+
+#resultRow {
+    height: 25px;
+}
+
+#result {
+    font-size: 20px;
+    width: 190px;
+}
+
+textarea {
+    resize: none;
+    height: 25px;
+    border: none;
+}
+
+input[type="button"] {
+    width: 45px;
+    height: 45px;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+.doubleWidth[type="button"] {
+    width: 95px;
+}

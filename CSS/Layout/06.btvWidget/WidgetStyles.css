@@ -1,0 +1,95 @@
+﻿body {
+    font-family: Arial, 'Arial Unicode MS', Verdana, sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+    color: #A0AAAE;
+    margin: 0;
+    padding: 5px;
+    background-color: #fff;
+}
+
+a {
+    color: #A0AAAE;
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+#widget {
+    width: 698px;
+    height: 365px;
+    background-color: #1E3741;
+    border: 1px solid #337D8F;
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    border-radius: 6px;
+}
+
+    #widget > #category {
+        margin: 10px 0 14px 0;
+        font-family: 'Arial Unicode MS';
+        padding: 0;
+    }
+
+        #widget > #category > ul {
+            margin: 0;
+            margin-left: -30px;
+        }
+
+            #widget > #category > ul > li {
+                display: inline-block;
+                padding: 10px;
+                margin: 0;
+                margin-right: -2px;
+                background-color: #4B5F67;
+            }
+
+                #widget > #category > ul > li:hover {
+                    text-decoration: underline;
+                }
+
+                #widget > #category > ul > li.selected {
+                    background-color: #1E3741;
+                }
+
+                    #widget > #category > ul > li.selected:hover {
+                        text-decoration: none;
+                    }
+
+                    #widget > #category > ul > li.selected > a {
+                        color: #FFF;
+                    }
+
+                        #widget > #category > ul > li.selected > a > div {
+                            width: 100%;
+                            height: 100%;
+                        }
+
+    #widget > #content-body > ul {
+        float: left;
+        width: 265px;
+        margin: 0 15px 0 10px;
+        padding: 0;
+    }
+
+        #widget > #content-body > ul > li {
+            margin: 0 -10px;
+            width: 295px;
+            border-bottom: 1px solid #334952;
+        }
+
+            #widget > #content-body > ul > li:last-child {
+                border: none;
+            }
+
+            #widget > #content-body > ul > li > a > .article-title {
+                width: 260px;
+                padding: 14px 15px;
+            }
+
+            #widget > #content-body > ul > li:hover > a > .article-title {
+                background-color: #00968C;
+                color: #fff;
+            }

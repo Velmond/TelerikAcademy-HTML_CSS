@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01.BasicTables", "01.BasicTables\01.BasicTables.csproj", "{C8FC4B22-705F-48BE-A2AE-4033B31E77C3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02.BasicForm", "02.BasicForm\02.BasicForm.csproj", "{06750DAE-AC88-4B8E-8591-90AC5728911F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03.CalculatorForm", "03.CalculatorForm\03.CalculatorForm.csproj", "{C05F08EC-AFBF-4607-BFE1-8617FD7DA8C7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C8FC4B22-705F-48BE-A2AE-4033B31E77C3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C8FC4B22-705F-48BE-A2AE-4033B31E77C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C8FC4B22-705F-48BE-A2AE-4033B31E77C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C8FC4B22-705F-48BE-A2AE-4033B31E77C3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{06750DAE-AC88-4B8E-8591-90AC5728911F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{06750DAE-AC88-4B8E-8591-90AC5728911F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{06750DAE-AC88-4B8E-8591-90AC5728911F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{06750DAE-AC88-4B8E-8591-90AC5728911F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C05F08EC-AFBF-4607-BFE1-8617FD7DA8C7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C05F08EC-AFBF-4607-BFE1-8617FD7DA8C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C05F08EC-AFBF-4607-BFE1-8617FD7DA8C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C05F08EC-AFBF-4607-BFE1-8617FD7DA8C7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

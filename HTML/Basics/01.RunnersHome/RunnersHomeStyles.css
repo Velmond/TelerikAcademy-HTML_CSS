@@ -1,0 +1,19 @@
+﻿body {
+}
+
+/* Move the list items all the way to the left as it is in the given example and get rid of the bullet because there is
+   no way to make it a a dash with just changing its 'list-style' */
+ul {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 0;
+}
+
+/* After getting rid of the initial bullet style get make it have a "- " before each list item */
+li:before {
+    content: "- ";
+}
+
+p {
+    margin-bottom: 0;
+}

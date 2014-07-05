@@ -1,0 +1,74 @@
+﻿body {
+    background-color: #a9a9a9;
+    color: #fff;
+}
+
+h1 {
+    color: #fafad2;
+}
+
+nav a {
+    font-size: 20px;
+}
+
+footer {
+    color: #000;
+}
+
+body > header {
+    text-align: center;
+}
+
+body > footer {
+    text-align: center;
+}
+
+article > p {
+    color: #000;
+}
+
+/* Remove the buttons for the list items */
+li {
+    list-style-type: none;
+}
+
+/* I guessed the underline needs to be when the link is hovered over but just in case someone doesn't hover over them and thinks
+   I did nothing for the underlineing, I added this underlining for the last item in the unordered list */
+ul li:last-child {
+    text-decoration: underline;
+}
+
+/* The links' background color changes upon clicking on them (activating them) but for the reason ponted above I set the color
+   for the link with class 'current' to have the required background color */
+.current {
+    background-color: #d3d3d3;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+    a:hover {
+        text-decoration: underline;
+    }
+
+    a:active {
+        background-color: #d3d3d3;
+    }
+
+body > header h1 {
+    font-size: 40px;
+}
+
+article h1 {
+    font-size: 26px;
+}
+
+article > footer p {
+    font-size: 12px;
+}
+
+footer a {
+    color: #000;
+}

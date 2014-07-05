@@ -1,0 +1,94 @@
+@mixin reset
+{
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+@mixin box($border-radius: 3px)
+{
+	border-radius: $border-radius;
+	border-width: 1px;
+	border-style: solid;
+	border-color: #fff;
+}
+
+@mixin clearfix
+{
+	zoom: 1;
+	
+	&:after
+	{
+		display: block;
+		content: "";
+		height: 0;
+		clear: both; 
+	}
+}
+
+body
+{
+	@include reset;
+	margin: 15px 35px;
+
+	article, section, ul, li, input[type="radio"], label
+	{
+		@include reset;
+	}
+
+	article
+	{
+		ul
+		{
+			@include clearfix;
+			list-style-type: none;
+
+			li
+			{
+				float: left;
+
+				&:not(:first-child)
+				{
+					margin-left: 5px;
+				}
+
+				label
+				{
+					img
+					{
+						@include box;
+						resize: both;
+						width: 110px;
+
+						&:hover
+						{
+							box-shadow: #999 0px 0px 10px;
+							cursor: pointer;
+						}
+					}
+				}
+			}
+		}
+
+		section
+		{
+			input[type="radio"]
+			{
+				visibility: collapse;
+
+				&:checked + img
+				{
+					@include box(6px);
+					display: block;
+					resize: both;
+					width: 370px;
+				}
+			}
+
+			input[type="radio"] + img
+			{
+				display: none;
+			}
+		}
+	}
+}

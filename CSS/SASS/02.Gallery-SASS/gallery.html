@@ -1,0 +1,61 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <link rel="stylesheet" type="text/css" href="Gallery.css" />
+    <title>Galery</title>
+</head>
+<body>
+    <article>
+        <ul>
+            <li>
+                <label for="radio-1">
+                    <img id="img1" src="images/1.jpg" alt="Image Not Loaded" /> <!-- I wanted to do it without radio buttons. Only with: 
+                                                                                     onclick="preview.src=img1.src" for each of the pics
+                                                                                     but for some reason it didn't work on Chrome...
+                                                                                     IE and FF did it exactly as it should have been --> 
+                </label>
+            </li>
+            <li>
+                <label for="radio-2">
+                    <img id="img2" src="images/2.jpg" alt="Image Not Loaded" />
+                </label>
+            </li>
+            <li>
+                <label for="radio-3">
+                    <img id="img3" src="images/3.jpg" alt="Image Not Loaded" />
+                </label>
+            </li>
+            <li>
+                <label for="radio-4">
+                    <img id="img4" src="images/4.jpg" alt="Image Not Loaded" />
+                </label>
+            </li>
+            <li>
+                <label for="radio-5">
+                    <img id="img5" src="images/5.jpg" alt="Image Not Loaded" />
+                </label>
+            </li>
+            <li>
+                <label for="radio-6">
+                    <img id="img6" src="images/6.jpg" alt="Image Not Loaded" />
+                </label>
+            </li>
+        </ul>
+
+        <section>
+            <input type="radio" id="radio-1" name="selected" checked="checked" />
+            <img src="images/1.jpg" alt="Image Not Loaded" />
+            <input type="radio" id="radio-2" name="selected" />
+            <img src="images/2.jpg" alt="Image Not Loaded" />
+            <input type="radio" id="radio-3" name="selected" />
+            <img src="images/3.jpg" alt="Image Not Loaded" />
+            <input type="radio" id="radio-4" name="selected" />
+            <img src="images/4.jpg" alt="Image Not Loaded" />
+            <input type="radio" id="radio-5" name="selected" />
+            <img src="images/5.jpg" alt="Image Not Loaded" />
+            <input type="radio" id="radio-6" name="selected" />
+            <img src="images/6.jpg" alt="Image Not Loaded" />
+        </section>
+    </article>
+</body>
+</html>

@@ -1,0 +1,63 @@
+﻿body {
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    background-color: #eee;
+}
+
+h1 {
+    font-weight: normal;
+    font-size: 1.4em;
+}
+
+#catalogue > .catalogue-entry {
+    width: 398px;
+    height: 118px;
+    border: 1px solid #999;
+    background-color: #fff;
+    margin-top: 18px;
+    margin-bottom: 18px;
+}
+
+    #catalogue > .catalogue-entry > img {
+        float: left;
+        margin: 15px;
+        border: 1px solid #999;
+    }
+
+    #catalogue > .catalogue-entry > .entry-controls {
+        width: 142px;
+        height: 25px;
+        position: relative;
+        left: 250px;
+        bottom: 37px;
+    }
+
+        #catalogue > .catalogue-entry > .entry-controls > input[type="button"] {
+            color: #fff;
+            padding-left: 15px;
+            border: 2px solid #640300;
+            border-top: 2px solid #E38482;
+            border-left: 2px solid #9F2D2F;
+            -moz-border-radius: 0px;
+            -webkit-border-radius: 0px;
+            border-radius: 0px;
+            /* Used http://www.colorzilla.com/gradient-editor/ to make the button "gradient" */
+            background: #8a0000; /* Old browsers */
+            background: -moz-linear-gradient(left, #8a0000 0%, #880000 15px, #cc0000 15px, #cc0000 100%); /* FF3.6+ */
+            background: -webkit-gradient(linear, left top, right top, color-stop(0%,#8a0000), color-stop(15px,#880000), color-stop(15px,#cc0000), color-stop(100%,#cc0000)); /* Chrome,Safari4+ */
+            background: -webkit-linear-gradient(left, #8a0000 0%,#880000 15px,#cc0000 15px,#cc0000 100%); /* Chrome10+,Safari5.1+ */
+            background: -o-linear-gradient(left, #8a0000 0%,#880000 15px,#cc0000 15px,#cc0000 100%); /* Opera 11.10+ */
+            background: -ms-linear-gradient(left, #8a0000 0%,#880000 15px,#cc0000 15px,#cc0000 100%); /* IE10+ */
+            background: linear-gradient(to right, #8a0000 0%,#880000 15px,#cc0000 15px,#cc0000 100%); /* W3C */
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8a0000', endColorstr='#cc0000',GradientType=1 ); /* IE6-9 */
+        }
+
+        #catalogue > .catalogue-entry > .entry-controls > .listenButton {
+            width: 72px;
+            height: 21px;
+        }
+
+        #catalogue > .catalogue-entry > .entry-controls > .addButton {
+            width: 58px;
+            height: 21px;
+        }

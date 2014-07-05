@@ -1,0 +1,16 @@
+﻿body {
+}
+
+div {
+    border: 1px solid #f00;
+    border-radius: 60px;
+    background-color: #000;
+}
+
+    div div {
+        width: 95%;
+    }
+
+    div.outermost-div {
+        width: 1000px;
+    }

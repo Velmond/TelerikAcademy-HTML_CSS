@@ -1,0 +1,231 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <link rel="stylesheet" type="text/css" href="FieldsetsAndNestedTablesStyles.css" />
+    <title>Fieldsets and Nested Tables</title>
+    <script type="text/javascript">
+        function printValue(sliderID, textboxID) {
+            var x = document.getElementById(textboxID);
+            var y = document.getElementById(sliderID);
+            x.innerText = y.value;
+        }
+
+        window.onload = function () {
+            printValue('minPriceSlider', 'minPrice');
+            printValue('maxPriceSlider', 'maxPrice');
+            printValue('minRAMSlider', 'minRAM');
+            printValue('maxRAMSlider', 'maxRAM');
+        }
+    </script>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <td>
+                    <nav>
+                        <a href="#">Apple</a>
+                        <a href="#">Toshiba</a>
+                        <a href="#">Lenovo</a>
+                        <a href="#">Dell</a>
+                        <a href="#">Asus</a>
+                        <a href="#">Acer</a>
+                        <a href="#">HP</a>
+                    </nav>
+                    <hr />
+                </td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    <table>
+                        <tr>
+                            <td>
+                                <table border="1" id="outerTable">
+                                    <tr>
+                                        <td>
+                                            <table>
+                                                <tr>
+                                                    <td>
+                                                        <fieldset>
+                                                            <legend>Apple MacBook Air</legend>
+                                                            <table>
+                                                                <tr>
+                                                                    <td rowspan="2">
+                                                                        <img src="images/macbookair.png" alt="Apple MacBook Air" />
+                                                                    </td>
+                                                                    <td>64 GB SSD</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>2 GB DDR</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>1300 USD</td>
+                                                                    <td>Intel Core i5</td>
+                                                                </tr>
+                                                            </table>
+                                                        </fieldset>
+                                                    </td>
+                                                    <td>
+                                                        <fieldset>
+                                                            <legend>Apple MacBook Air</legend>
+                                                            <table>
+                                                                <tr>
+                                                                    <td rowspan="2">
+                                                                        <img src="images/macbookair.png" alt="Apple MacBook Air" />
+                                                                    </td>
+                                                                    <td>64 GB SSD</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>2 GB DDR</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>1300 USD</td>
+                                                                    <td>Intel Core i5</td>
+                                                                </tr>
+                                                            </table>
+                                                        </fieldset>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <fieldset>
+                                                            <legend>Apple MacBook Air</legend>
+                                                            <table>
+                                                                <tr>
+                                                                    <td rowspan="2">
+                                                                        <img src="images/macbookair.png" alt="Apple MacBook Air" />
+                                                                    </td>
+                                                                    <td>64 GB SSD</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>2 GB DDR</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>1300 USD</td>
+                                                                    <td>Intel Core i5</td>
+                                                                </tr>
+                                                            </table>
+                                                        </fieldset>
+                                                    </td>
+                                                    <td>
+                                                        <fieldset>
+                                                            <legend>Apple MacBook Air</legend>
+                                                            <table>
+                                                                <tr>
+                                                                    <td rowspan="2">
+                                                                        <img src="images/macbookair.png" alt="Apple MacBook Air" />
+                                                                    </td>
+                                                                    <td>64 GB SSD</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>2 GB DDR</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>1300 USD</td>
+                                                                    <td>Intel Core i5</td>
+                                                                </tr>
+                                                            </table>
+                                                        </fieldset>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <fieldset>
+                                                            <legend>Apple MacBook Air</legend>
+                                                            <table>
+                                                                <tr>
+                                                                    <td rowspan="2">
+                                                                        <img src="images/macbookair.png" alt="Apple MacBook Air" />
+                                                                    </td>
+                                                                    <td>64 GB SSD</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>2 GB DDR</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>1300 USD</td>
+                                                                    <td>Intel Core i5</td>
+                                                                </tr>
+                                                            </table>
+                                                        </fieldset>
+                                                    </td>
+                                                    <td>
+                                                        <fieldset>
+                                                            <legend>Apple MacBook Air</legend>
+                                                            <table>
+                                                                <tr>
+                                                                    <td rowspan="2">
+                                                                        <img src="images/macbookair.png" alt="Apple MacBook Air" />
+                                                                    </td>
+                                                                    <td>64 GB SSD</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>2 GB DDR</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>1300 USD</td>
+                                                                    <td>Intel Core i5</td>
+                                                                </tr>
+                                                            </table>
+                                                        </fieldset>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                            <td>
+                                <table>
+                                    <tr>
+                                        <td>
+                                            <p>
+                                                Min price:
+                                                <span id="minPrice"></span>
+                                                USD
+                                            </p>
+                                            <input type="range" id="minPriceSlider" min="0" max="1000" step="50" value="500" onchange="printValue('minPriceSlider','minPrice')" />
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p>
+                                                Max price:
+                                                <span id="maxPrice"></span>
+                                                USD
+                                            </p>
+                                            <input type="range" id="maxPriceSlider" min="500" max="2500" step="100" value="1500" onchange="printValue('maxPriceSlider','maxPrice')" />
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p>
+                                                Min RAM:
+                                                <span id="minRAM"></span>
+                                                GB
+                                            </p>
+                                            <input type="range" id="minRAMSlider" min="0" max="8" step="2" value="4" onchange="printValue('minRAMSlider','minRAM')" />
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p>
+                                                Max Max:
+                                                <span id="maxRAM"></span>
+                                                GB
+                                            </p>
+                                            <input type="range" id="maxRAMSlider" min="4" max="28" step="4" value="16" onchange="printValue('maxRAMSlider','maxRAM')" />
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
